@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 export const TrialUseState = ({ initialValue }) => {
-  const [count, setCount] = useState(initialValue);
+  const [flag, setFlag] = useState(false);
+  
   return (
     <>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me!</button>
+      <p>Flag: {flag ? 'true' : 'false'}</p>
+      <button onClick={() => setFlag(!flag)}>Click me!</button>
     </>
   );
 };

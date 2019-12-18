@@ -1,13 +1,13 @@
 import * as React from 'react';
 import './App.css';
 
-import { TrialUseState } from './components/TrialUseState/index';
+import { TrialUseEffect } from './components/TrialUseEffect/index';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <TrialUseState initialValue={0} />
+        <TrialUseEffect initialValue={0} />
       </div>
     );
   }
